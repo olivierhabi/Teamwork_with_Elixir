@@ -1,0 +1,27 @@
+<h1 class="header-one">Articles</h1>
+<a href="/articles/new" class="btn-floating waves-effect waves-light light-blue btn-create">
+<i class="material-icons">add</i></a>
+<div class="container">
+    <div class="row">
+    <%= for article <- @articles do %>
+    <div class="col s12 m4">
+        <div class="card">
+        <div class="card-image">
+            <img src="https://materializecss.com/images/sample-1.jpg" />
+            <span class="card-title"><%= article.title%></span>
+        </div>
+        <div class="card-content">
+            <p>
+                Article: <%= article.content %></br>
+                Image: <%= article.image%>
+            </p>
+        </div>
+        <div class="card-action">
+            <a href="#">Edit</a>
+            <a href="#">delete</a>
+        </div>
+        </div>
+    </div>
+    <% end %>
+    </div>
+</div>

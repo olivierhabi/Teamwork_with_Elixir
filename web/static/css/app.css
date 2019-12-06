@@ -1,0 +1,81 @@
+/* This file is for your main application css. */
+.brand-logo {
+  padding-left: 20px !important;
+}
+body {
+  background-color: #dcdde1;
+}
+
+#btn-3 {
+  background-color: #2d3436;
+  color: #fff;
+  border-style: solid;
+  border-color: #fff;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.btn-large {
+  background-color: #00a8ff;
+  top: 50px;
+  height: 60px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  border-style: solid;
+}
+.btn-large:hover {
+  background-color: #0097e6;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #636e72;
+  color: #fff;
+}
+.header-one {
+  padding-top: 8px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-1 {
+  width: auto;
+  max-width: 650px;
+  max-height: 650px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #fff;
+  box-shadow: 2px 4px 10px 4px #93999b;
+  padding: 4%;
+  border-style: solid;
+  border-color: #00a8ff;
+}
+.btn-create {
+  left: 100px;
+  size: 100px;
+}
+#btn-2 {
+  top: 10px;
+  background-color: #00a8ff;
+  color: #fff;
+  border-style: solid;
+  border-color: #fff;
+  height: 45px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.help-block {
+  color: red;
+}
+#article_title {
+  color: black;
+}
+#article_content {
+  color: black;
+}
+#article_image {
+  color: black;
+}

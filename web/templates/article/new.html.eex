@@ -1,0 +1,34 @@
+<h1 class="header-one">New article</h1>
+
+<div class="container-1">
+  <div class="container-2">
+    <div class="row">
+    <%= form_for @changeset, article_path(@conn, :create), fn f -> %>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= text_input f, :title, placeholder: "Title", class: "validate" %>
+          <%= error_tag f, :title%>
+          <label for="title">Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= text_input f, :content, placeholder: "Content", class: "validate" %>
+          <%= error_tag f, :content%>
+          <label for="Content">Content</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= text_input f, :image, placeholder: "Image", class: "validate" %>
+          <%= error_tag f, :image %>
+          <label for="Image">Image</label>
+        </div>
+      </div>
+      <%= submit "Save Article", id: "btn-2",class: "waves-effect waves-light btn btn-2"%>
+      <%= button("Cancel", to: "/", method: "get", class: "waves-effect waves-light btn btn-2", id: "btn-2") %>
+
+    <% end %>
+    </div>
+  </div>
+</div>
