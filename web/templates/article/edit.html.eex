@@ -1,9 +1,9 @@
-<h1 class="header-one">New article</h1>
+<h1 class="header-one">Update article</h1>
 
 <div class="container-1">
   <div class="container-2">
     <div class="row">
-    <%= form_for @changeset, article_path(@conn, :create), fn f -> %>
+    <%= form_for @changeset, article_path(@conn, :update, @article), fn f -> %>
       <div class="row">
         <div class="input-field col s12">
           <%= text_input f, :title, placeholder: "Title", class: "validate" %>
@@ -25,7 +25,7 @@
           <label for="Image">Image</label>
         </div>
       </div>
-      <%= submit "Save", id: "btn-2",class: "waves-effect waves-light btn btn-2"%>
+      <%= submit "Update", id: "btn-2",class: "waves-effect waves-light btn btn-2"%>
       <%= button("Cancel", to: "/", method: "get", class: "waves-effect waves-light btn btn-2", id: "btn-2") %>
 
     <% end %>

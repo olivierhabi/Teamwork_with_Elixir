@@ -17,9 +17,13 @@ defmodule Teamwork.Router do
     pipe_through :browser # Use the default browser stack
 
     # get "/", PageController, :index
-    get "/", ArticleController, :index
-    get "/articles/new", ArticleController, :new
-    post "/articles", ArticleController, :create
+    # get "/", ArticleController, :index
+    # get "/articles/new", ArticleController, :new
+    # post "/articles", ArticleController, :create
+    # get "/articles/:id/edit", ArticleController, :edit
+    # put "/articles/:id", ArticleController, :update
+
+    resources "/", ArticleController
   end
 
   # Other scopes may use custom stacks.
