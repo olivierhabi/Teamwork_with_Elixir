@@ -20,7 +20,9 @@
             <a href="#">
                 <%= link "Edit", to: article_path(@conn, :edit, article)%>
             </a>
-            <a href="#">delete</a>
+            <a href="#">
+                <%= link "Delete", to: article_path(@conn, :delete, article), method: :delete%>
+            </a>
         </div>
         </div>
     </div>

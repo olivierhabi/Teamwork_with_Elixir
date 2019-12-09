@@ -33,7 +33,10 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <a id= "btn-3" class="waves-effect waves-light btn"
-            ><i class="material-icons left">cloud_done</i>Singup with Github</a
+            ><i class="material-icons left">cloud_done</i>Signup</a
+          >
+          <a id= "btn-3" class="waves-effect waves-light btn"
+            >Signin</a
           >
         </li>
       </ul>

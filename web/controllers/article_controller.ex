@@ -49,5 +49,13 @@ defmodule Teamwork.ArticleController do
           render conn, "edit.html", changeset: changeset, topic: old_article
       end
     end
+
+    def delete(conn, %{"id" => article_id}) do
+      Repo.get!(Article, article_id) |> Repo.delete!
+
+      conn
+      |> put_flash(:info, "Article deleted")
+      |> redirect(to: article_path(conn, :index))
+    end
   end
   
