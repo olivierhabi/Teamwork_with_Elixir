@@ -80,3 +80,12 @@ body {
 #article_image {
   color: black;
 }
+
+.fixed-action-btn {
+  position: fixed;
+  right: 230px;
+  bottom: 230px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}

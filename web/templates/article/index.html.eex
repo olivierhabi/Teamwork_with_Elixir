@@ -1,6 +1,13 @@
 <h1 class="header-one">Articles</h1>
-<a href="/articles/new" class="btn-floating waves-effect waves-light light-blue btn-create">
-<i class="material-icons">add</i></a>
+<div class="btn-create">
+    <%= link to: article_path(@conn, :new), class: "btn-floating waves-effect waves-light light-blue btn-create" do %>
+        <i class="material-icons">add</i>
+    <% end %>
+<i class="material-icons"></i>
+
+
+
+
 <div class="container">
     <div class="row">
     <%= for article <- @articles do %>
