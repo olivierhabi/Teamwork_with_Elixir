@@ -1,7 +1,5 @@
 # Teamwork
 
-# Demo
-
 ![alt text](./images/demo.png)
 To start your Phoenix app:
 
